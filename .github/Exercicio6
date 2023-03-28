@@ -1,0 +1,12 @@
+package main
+
+import "fmt"
+
+func main() {
+	numeros := [3]int64{23, 42, 64}
+	var soma int64
+	for _, numero := range numeros {
+		soma += numero
+	}
+	fmt.Println(soma)
+}
