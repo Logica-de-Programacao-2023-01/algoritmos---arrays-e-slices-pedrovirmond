@@ -1,0 +1,13 @@
+package main
+
+import "fmt"
+
+func main() {
+	numeros := [6]float64{23.4, 42.3, 76.5, 12.1, 8.7, 53.4}
+	var soma float64
+	for _, numero := range numeros {
+		soma += numero
+	}
+	media := soma / float64(len(numeros))
+	fmt.Println(media)
+}
